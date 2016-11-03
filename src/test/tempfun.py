@@ -28,6 +28,8 @@ print dir(activityElement[0])
 print activityElement[0].attrib
 print activityElement[0].Value()
 
+
+
 class XMLElements():
     def __init__(self):
         self.__filepath = PATH(r"../configuration/project_testdata/example/english_example.xml")
