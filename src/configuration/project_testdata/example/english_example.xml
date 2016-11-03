@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+	<summary>
+		<appName>All-in-One Remote</appName>
+		<appVersion>3.8.121</appVersion>
+		<appPacage>com.hp.printercontrol</appPacage>
+		<appLaunchableActivity>com.hp.printercontrol.base.UiDrawerBaseAct</appLaunchableActivity>
+		<language>English</language>
+	</summary>
+	<appActivity activityName = ".base.UiDrawerBaseAct" desc = "mainPage">
+		<!-- 			     
+			find_element_by_accessibility_id                         find_elements_by_accessibility_id     
+			find_element_by_android_uiautomator                      find_elements_by_android_uiautomator
+			find_element_by_class_name                               find_elements_by_class_name
+			find_element_by_css_selector                             find_elements_by_css_selector
+			find_element_by_id                                       find_elements_by_id
+			find_element_by_ios_uiautomation                         find_elements_by_ios_uiautomation
+			find_element_by_link_text                                find_elements_by_link_text                            
+			find_element_by_name                                     find_elements_by_name                         
+			find_element_by_partial_link_text                        find_elements_by_partial_link_texts
+			find_element_by_tag_name                                 find_elements_by_tag_name
+			find_element_by_xpath                                    find_elements_by_xpath
+		-->
+		<appElement elementName= "titleTextView" method = "find_element_by_id" locationValue = "android:id/action_bar_title" />
+		
+		<appElement elementName = "availablePrintersButton" method = "find_element_by_id" locationValue = "com.hp.printercontrol:id/availablePrintersButton"  jumpTargetActivity = ".printerselection.UiPrinterSelectionAct"/>
+		<!-- 
+		//node[@resource-id="com.hp.printercontrol:id/home_button_tablerow1"]//node[@class="android.widget.LinearLayout"]
+		-->
+		<appElement elementName = "print/share" method = "find_elements_by_xpath" locationValue = "//node[@resource-id=&quot;com.hp.printercontrol:id/home_button_tablerow1&quot;]//node[@class=&quot;android.widget.LinearLayout&quot;]"  index = "2" jumpTargetActivity = "TargetActivityName"/>
+		
+		
+		<appElement elementName = "" method = "find_element_by_id" locationValue = ""  jumpTargetActivity = "TargetActivityName"/>
+		<appElement elementName = "" method = "find_element_by_id" locationValue = "" />
+		<appElement elementName = "" method = "find_elements_by_id" locationValue = "" index = "1"/>
+	</appActivity>
+</app>
